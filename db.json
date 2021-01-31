@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Todo Application",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Api",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Submit assignment",
+      "completed": false
+    }
+  ]
+}

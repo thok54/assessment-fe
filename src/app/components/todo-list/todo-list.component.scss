@@ -1,0 +1,47 @@
+.todo-input {
+    width: 100%;
+    padding: 10px 18px;
+    font-size: 18px;
+    margin-bottom: 16px;
+  
+    &:focus {
+      outline: 0;
+    }
+  }
+  
+  .extra-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    border-top: 1px solid lightgrey;
+    padding-top: 14px;
+    margin-bottom: 14px;
+  }
+  
+  button {
+    font-size: 14px;
+    background-color: white;
+    appearance: none;
+  
+    &:hover {
+      background: lightgreen;
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .active {
+    background: lightgreen;
+  }
+  
+  // CSS Transitions
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .2s;
+  }
+  
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }

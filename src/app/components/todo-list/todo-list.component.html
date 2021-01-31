@@ -1,0 +1,19 @@
+<input type="text" class="todo-input" placeholder="What needs to be done" [(ngModel)]="todoTitle" (keyup.enter)="addTodo()">
+
+<todo-item
+  *ngFor="let todo of todoService.todosFiltered()"
+  [todo]="todo"
+></todo-item>
+
+<div class="extra-container">
+  <div>{{ todoService.remaining() }} items left</div>
+</div>
+
+<div class="extra-container">
+  <div>
+    <button [ngClass]="{'active': todoService.filter === 'all'}" (click)="todoService.filter='all'">All</button>
+    <button [ngClass]="{'active': todoService.filter === 'active'}" (click)="todoService.filter='active'">Active</button>
+    <button [ngClass]="{'active': todoService.filter === 'completed'}" (click)="todoService.filter='completed'">Completed</button>
+  </div>
+
+</div>
